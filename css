@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Patrick+Hand&display=swap');
+
+/* Style Body Here */
+body {
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    width: auto;
+    background: url(https://www.fleminghomes.co.uk/wp-content/uploads/2022/02/Self-build-mortgages.jpg);
+}
+/* H1 style */
+h1 {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    align-content: flex-start;
+    display: flex;
+    font-family: Patrick Hand
+}
+/* Container style */
+#inputContainer {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    display: list-item;
+    margin: auto;
+    padding: 0%;
+    width: 1000px;
+    height: 230px;
+    font-family: Patrick Hand;
+    font-size: 25px;
+    font-weight: 500;
+    background: rgba(100, 100, 100, .5);
+}
+/* Outputstyle */
+#outputContainer {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    align-content: flex-start;
+    display: flex;
+    font-family: Patrick Hand, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    height: 100px;
+}
+#weeklyContainer{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    align-content: flex-start;
+    display: flex;
+    font-family: Patrick Hand, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+#button {
+    width: 100px;
+    font-family: Patrick Hand, sans-serif;
+    color:black;
+    font-weight: 600;
+}
+#button:hover {
+    background-color: rgb(192, 192, 192);
+}
