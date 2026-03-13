@@ -44,15 +44,17 @@ h1 {
 
 /* 4. Button style */
 #button {
+    display: block;    /* 1. Allows the button to take up its own line */
+    margin: 20px auto; /* 2. Pushes equal space on left and right, centering it */
+    
+    /* Keep your other styles below */
     width: 150px;
     padding: 10px;
     cursor: pointer;
     background-color: white;
     border: 1px solid #ccc;
-    font-family: inherit; /* Takes font from body */
+    font-family: inherit;
     font-weight: 600;
-    transition: 0.3s;
-    margin-top: 10px;
 }
 
 #button:hover {
