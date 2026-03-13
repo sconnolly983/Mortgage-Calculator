@@ -6,11 +6,17 @@ btn.addEventListener('click', function(){
     let yearsvalue = parseFloat(document.getElementById('term').value);
     let interestratevalue = parseFloat(document.getElementById('rate').value);
 
-    // Output 1: Percentage of house covered by deposit
+    // Output 1: Ratio (Remains the same)
     let ratio = (depositvalue / housevalue) * 100;
     document.getElementById('output').value = ratio.toFixed(2) + "%";
 
-    // Output 2: Monthly Repayment (Sent to the 'weekly' ID)
-    let monthly = (housevalue - depositvalue) / (yearsvalue * 12) * (interestratevalue / 100 + 1);
+    // Output 2: The Real Mortgage Formula (Amortization)
+    let P = housevalue - depositvalue;           // Principal loan amount
+    let r = (interestratevalue / 100) / 12;     // Monthly interest rate
+    let n = yearsvalue * 12;                    // Total number of months
+
+    // The formula: M = P [ r(1 + r)^n ] / [ (1 + r)^n – 1 ]
+    let monthly = P * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+
     document.getElementById('weekly').value = "£" + monthly.toFixed(2);
 });
