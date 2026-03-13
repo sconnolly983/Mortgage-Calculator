@@ -42,21 +42,18 @@ h1 {
     margin: 10px 0;
 }
 
-/* 4. Button style */
-#button {
-    display: block;    /* 1. Allows the button to take up its own line */
-    margin: 20px auto; /* 2. Pushes equal space on left and right, centering it */
-    
-    /* Keep your other styles below */
-    width: 150px;
-    padding: 10px;
-    cursor: pointer;
-    background-color: white;
-    border: 1px solid #ccc;
-    font-family: inherit;
-    font-weight: 600;
+.button-wrapper {
+    width: 100%;        /* Make the wrapper span the whole page */
+    display: flex;       /* Use flexbox */
+    justify-content: center; /* Center the contents horizontally */
+    margin-top: 20px;   /* Add some breathing room */
 }
 
+#button {
+    width: 150px;
+    padding: 10px;
+    /* Remove 'display: block' and 'margin: auto' if using the wrapper method */
+}
 #button:hover {
     background-color: rgb(192, 192, 192);
 }
