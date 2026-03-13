@@ -1,70 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Patrick+Hand&display=swap');
 
-/* Style Body Here */
+/* 1. Global Styles: Set it once, inherit everywhere */
 body {
-    margin: auto;
-    align-content: center;
-    justify-content: center;
-    width: auto;
-    background: url(https://www.fleminghomes.co.uk/wp-content/uploads/2022/02/Self-build-mortgages.jpg);
+    margin: 0;
+    padding: 20px;
+    font-family: 'Patrick Hand', sans-serif; /* Now you don't need to repeat this */
+    background: url(https://www.fleminghomes.co.uk/wp-content/uploads/2022/02/Self-build-mortgages.jpg) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This centers everything on the page horizontally */
 }
-/* H1 style */
+
 h1 {
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    align-content: flex-start;
-    display: flex;
-    font-family: Patrick Hand
-}
-/* Container style */
-#inputContainer {
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+    display: block;
     text-align: center;
-    display: list-item;
-    margin: auto;
-    padding: 0%;
-    width: 1000px;
-    height: 230px;
-    font-family: Patrick Hand;
-    font-size: 25px;
-    font-weight: 500;
-    background: rgba(100, 100, 100, .5);
+    margin-bottom: 20px;
 }
-/* Outputstyle */
-#outputContainer {
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    align-content: flex-start;
+
+/* 2. Container style */
+#inputContainer {
     display: flex;
-    font-family: Patrick Hand, sans-serif;
-    font-size: 25px;
-    font-weight: 500;
-    height: 100px;
-}
-#weeklyContainer{
+    flex-direction: column;
     align-items: center;
-    align-content: center;
-    justify-content: center;
-    align-content: flex-start;
+    text-align: center;
+    padding: 30px;
+    width: 90%;            /* Responsive: uses 90% of screen */
+    max-width: 800px;     /* ...but never wider than 800px */
+    min-height: 230px;    /* Use min-height so it GROWS if text is long */
+    background: rgba(100, 100, 100, .7); /* Increased opacity for readability */
+    border-radius: 10px;  /* Smooths the edges */
+    margin-bottom: 20px;
+}
+
+/* 3. Output sections */
+#outputContainer, #weeklyContainer {
     display: flex;
-    font-family: Patrick Hand, sans-serif;
+    justify-content: center;
     font-size: 25px;
     font-weight: 500;
+    margin: 10px 0;
 }
+
+/* 4. Button style */
 #button {
-    width: 100px;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    display: flex;
-    font-family: Patrick Hand, sans-serif;
-    color:black;
+    width: 150px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #ccc;
+    font-family: inherit; /* Takes font from body */
     font-weight: 600;
+    transition: 0.3s;
+    margin-top: 10px;
 }
+
 #button:hover {
     background-color: rgb(192, 192, 192);
 }
